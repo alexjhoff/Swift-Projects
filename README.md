@@ -2,6 +2,14 @@
 Practice Swift Projects
 New skills from projects:
 
+Past Location:
+-Constraints
+-Required device capabilities
+-Permissions
+-Guard statements
+-User defaults
+-Structures
+
 Time Travel:
 -Tab bar controllers
 -Layouts (relative and absolute positioning)
