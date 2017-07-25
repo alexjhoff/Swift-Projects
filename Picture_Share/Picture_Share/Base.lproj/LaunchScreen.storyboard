@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images/polaroid.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bwu-FR-Qii">
+                                <rect key="frame" x="0.0" y="183.5" width="375" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOO-7k-wn2">
+                                <rect key="frame" x="109.5" y="575.5" width="156" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156862745094" green="0.082352941176470587" blue="0.89803921568627454" alpha="0.69994113869863017" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dOO-7k-wn2" secondAttribute="bottom" constant="58" id="YfN-Az-CQf"/>
+                            <constraint firstItem="Bwu-FR-Qii" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.45" id="cn5-cN-Dw2"/>
+                            <constraint firstAttribute="trailing" secondItem="Bwu-FR-Qii" secondAttribute="trailing" id="hyx-5P-NtP"/>
+                            <constraint firstItem="Bwu-FR-Qii" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jSW-Di-fJk"/>
+                            <constraint firstItem="dOO-7k-wn2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jg6-IE-mDs"/>
+                            <constraint firstItem="Bwu-FR-Qii" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="oFC-1r-NBX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images/polaroid.jpg" width="16" height="16"/>
+    </resources>
+</document>
