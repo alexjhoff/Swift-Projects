@@ -12,6 +12,17 @@ Picture Share:
 -Accessing the camera
 -Saving and passing camera image
 
+<<<<<<< HEAD
+=======
+Past Location:
+-Constraints
+-Required device capabilities
+-Permissions
+-Guard statements
+-User defaults
+-Structures
+
+>>>>>>> 8ecab229cbbeecbccba24c38a4e37e0a1a7dc63a
 Time Travel:
 -Tab bar controllers
 -Layouts (relative and absolute positioning)
