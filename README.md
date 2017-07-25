@@ -8,7 +8,7 @@ Picture Share:
 -Passing data between view controllers
 -Photos framework
 -Sharing on social media
--Single action for mubliple buttons
+-Single action for multiple buttons
 -Accessing the camera
 -Saving and passing camera image
 
