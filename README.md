@@ -2,6 +2,14 @@
 Practice Swift Projects
 New skills from projects:
 
+ChatApp:
+-Mastered Cocapods
+-Firebase
+-User registration system
+-Live updates from Firebase
+-Password reset
+-Managing user inputs
+
 Picture Share:
 -Launch screens
 -Custom table cells
