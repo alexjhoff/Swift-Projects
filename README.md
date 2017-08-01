@@ -2,6 +2,15 @@
 Practice Swift Projects
 New skills from projects:
 
+Transcriber
+-Tabbed apps
+-Permissions
+-Recording from microphone and saving
+-Transcribe audio files with Siri
+-Audio playback
+-Core Data
+-Save text files with audio files
+
 ChatApp:
 -Mastered Cocapods
 -Firebase
