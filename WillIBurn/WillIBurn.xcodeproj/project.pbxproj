@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2957581F32437A0086401F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2957571F32437A0086401F /* AppDelegate.swift */; };
+		FA29575A1F32437A0086401F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2957591F32437A0086401F /* ViewController.swift */; };
+		FA29575D1F32437B0086401F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA29575B1F32437A0086401F /* Main.storyboard */; };
+		FA2957601F32437B0086401F /* WillIBurn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA29575E1F32437B0086401F /* WillIBurn.xcdatamodeld */; };
+		FA2957621F32437B0086401F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2957611F32437B0086401F /* Assets.xcassets */; };
+		FA2957651F32437B0086401F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2957631F32437B0086401F /* LaunchScreen.storyboard */; };
+		FA2957891F324D2D0086401F /* CooperHewitt-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA29577B1F324D2D0086401F /* CooperHewitt-Bold.otf */; };
+		FA29578A1F324D2D0086401F /* CooperHewitt-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA29577C1F324D2D0086401F /* CooperHewitt-BoldItalic.otf */; };
+		FA29578B1F324D2D0086401F /* CooperHewitt-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA29577D1F324D2D0086401F /* CooperHewitt-Book.otf */; };
+		FA29578C1F324D2D0086401F /* CooperHewitt-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA29577E1F324D2D0086401F /* CooperHewitt-BookItalic.otf */; };
+		FA29578D1F324D2D0086401F /* CooperHewitt-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA29577F1F324D2D0086401F /* CooperHewitt-Heavy.otf */; };
+		FA29578E1F324D2D0086401F /* CooperHewitt-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957801F324D2D0086401F /* CooperHewitt-HeavyItalic.otf */; };
+		FA29578F1F324D2D0086401F /* CooperHewitt-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957811F324D2D0086401F /* CooperHewitt-Light.otf */; };
+		FA2957901F324D2D0086401F /* CooperHewitt-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957821F324D2D0086401F /* CooperHewitt-LightItalic.otf */; };
+		FA2957911F324D2D0086401F /* CooperHewitt-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957831F324D2D0086401F /* CooperHewitt-Medium.otf */; };
+		FA2957921F324D2D0086401F /* CooperHewitt-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957841F324D2D0086401F /* CooperHewitt-MediumItalic.otf */; };
+		FA2957931F324D2D0086401F /* CooperHewitt-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957851F324D2D0086401F /* CooperHewitt-Semibold.otf */; };
+		FA2957941F324D2D0086401F /* CooperHewitt-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957861F324D2D0086401F /* CooperHewitt-SemiboldItalic.otf */; };
+		FA2957951F324D2D0086401F /* CooperHewitt-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957871F324D2D0086401F /* CooperHewitt-Thin.otf */; };
+		FA2957961F324D2D0086401F /* CooperHewitt-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA2957881F324D2D0086401F /* CooperHewitt-ThinItalic.otf */; };
+		FA2957981F326CB90086401F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2957971F326CB90086401F /* Utilities.swift */; };
+		FA2957B41F3289EC0086401F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2957A71F3288AC0086401F /* Alamofire.framework */; };
+		FA2957B51F3289EC0086401F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA2957A71F3288AC0086401F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA2957BA1F328E510086401F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2957B91F328E510086401F /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA2957A61F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		FA2957A81F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		FA2957AA1F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		FA2957AC1F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		FA2957AE1F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		FA2957B01F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		FA2957B21F3288AC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		FA2957B61F3289EC0086401F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA2957B81F3289EC0086401F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA2957B51F3289EC0086401F /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA2957541F32437A0086401F /* WillIBurn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WillIBurn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2957571F32437A0086401F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA2957591F32437A0086401F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA29575C1F32437A0086401F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA29575F1F32437B0086401F /* WillIBurn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WillIBurn.xcdatamodel; sourceTree = "<group>"; };
+		FA2957611F32437B0086401F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2957641F32437B0086401F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA2957661F32437B0086401F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA29577B1F324D2D0086401F /* CooperHewitt-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Bold.otf"; sourceTree = "<group>"; };
+		FA29577C1F324D2D0086401F /* CooperHewitt-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-BoldItalic.otf"; sourceTree = "<group>"; };
+		FA29577D1F324D2D0086401F /* CooperHewitt-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Book.otf"; sourceTree = "<group>"; };
+		FA29577E1F324D2D0086401F /* CooperHewitt-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-BookItalic.otf"; sourceTree = "<group>"; };
+		FA29577F1F324D2D0086401F /* CooperHewitt-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Heavy.otf"; sourceTree = "<group>"; };
+		FA2957801F324D2D0086401F /* CooperHewitt-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-HeavyItalic.otf"; sourceTree = "<group>"; };
+		FA2957811F324D2D0086401F /* CooperHewitt-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Light.otf"; sourceTree = "<group>"; };
+		FA2957821F324D2D0086401F /* CooperHewitt-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-LightItalic.otf"; sourceTree = "<group>"; };
+		FA2957831F324D2D0086401F /* CooperHewitt-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Medium.otf"; sourceTree = "<group>"; };
+		FA2957841F324D2D0086401F /* CooperHewitt-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-MediumItalic.otf"; sourceTree = "<group>"; };
+		FA2957851F324D2D0086401F /* CooperHewitt-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Semibold.otf"; sourceTree = "<group>"; };
+		FA2957861F324D2D0086401F /* CooperHewitt-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		FA2957871F324D2D0086401F /* CooperHewitt-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-Thin.otf"; sourceTree = "<group>"; };
+		FA2957881F324D2D0086401F /* CooperHewitt-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CooperHewitt-ThinItalic.otf"; sourceTree = "<group>"; };
+		FA2957971F326CB90086401F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		FA2957B91F328E510086401F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2957511F32437A0086401F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2957B41F3289EC0086401F /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA29574B1F32437A0086401F = {
+			isa = PBXGroup;
+			children = (
+				FA2957561F32437A0086401F /* WillIBurn */,
+				FA2957551F32437A0086401F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2957551F32437A0086401F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2957541F32437A0086401F /* WillIBurn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2957561F32437A0086401F /* WillIBurn */ = {
+			isa = PBXGroup;
+			children = (
+				FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */,
+				FA29576C1F324CBD0086401F /* Resources */,
+				FA2957571F32437A0086401F /* AppDelegate.swift */,
+				FA2957591F32437A0086401F /* ViewController.swift */,
+				FA29575B1F32437A0086401F /* Main.storyboard */,
+				FA2957611F32437B0086401F /* Assets.xcassets */,
+				FA2957631F32437B0086401F /* LaunchScreen.storyboard */,
+				FA2957661F32437B0086401F /* Info.plist */,
+				FA29575E1F32437B0086401F /* WillIBurn.xcdatamodeld */,
+				FA2957971F326CB90086401F /* Utilities.swift */,
+				FA2957B91F328E510086401F /* Constants.swift */,
+			);
+			path = WillIBurn;
+			sourceTree = "<group>";
+		};
+		FA29576C1F324CBD0086401F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA29577B1F324D2D0086401F /* CooperHewitt-Bold.otf */,
+				FA29577C1F324D2D0086401F /* CooperHewitt-BoldItalic.otf */,
+				FA29577D1F324D2D0086401F /* CooperHewitt-Book.otf */,
+				FA29577E1F324D2D0086401F /* CooperHewitt-BookItalic.otf */,
+				FA29577F1F324D2D0086401F /* CooperHewitt-Heavy.otf */,
+				FA2957801F324D2D0086401F /* CooperHewitt-HeavyItalic.otf */,
+				FA2957811F324D2D0086401F /* CooperHewitt-Light.otf */,
+				FA2957821F324D2D0086401F /* CooperHewitt-LightItalic.otf */,
+				FA2957831F324D2D0086401F /* CooperHewitt-Medium.otf */,
+				FA2957841F324D2D0086401F /* CooperHewitt-MediumItalic.otf */,
+				FA2957851F324D2D0086401F /* CooperHewitt-Semibold.otf */,
+				FA2957861F324D2D0086401F /* CooperHewitt-SemiboldItalic.otf */,
+				FA2957871F324D2D0086401F /* CooperHewitt-Thin.otf */,
+				FA2957881F324D2D0086401F /* CooperHewitt-ThinItalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FA29579C1F3288AB0086401F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2957A71F3288AC0086401F /* Alamofire.framework */,
+				FA2957A91F3288AC0086401F /* Alamofire iOS Tests.xctest */,
+				FA2957AB1F3288AC0086401F /* Alamofire.framework */,
+				FA2957AD1F3288AC0086401F /* Alamofire macOS Tests.xctest */,
+				FA2957AF1F3288AC0086401F /* Alamofire.framework */,
+				FA2957B11F3288AC0086401F /* Alamofire tvOS Tests.xctest */,
+				FA2957B31F3288AC0086401F /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2957531F32437A0086401F /* WillIBurn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2957691F32437B0086401F /* Build configuration list for PBXNativeTarget "WillIBurn" */;
+			buildPhases = (
+				FA2957501F32437A0086401F /* Sources */,
+				FA2957511F32437A0086401F /* Frameworks */,
+				FA2957521F32437A0086401F /* Resources */,
+				FA2957B81F3289EC0086401F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA2957B71F3289EC0086401F /* PBXTargetDependency */,
+			);
+			name = WillIBurn;
+			productName = WillIBurn;
+			productReference = FA2957541F32437A0086401F /* WillIBurn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA29574C1F32437A0086401F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alex Hoff";
+				TargetAttributes = {
+					FA2957531F32437A0086401F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MH272BU5WF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA29574F1F32437A0086401F /* Build configuration list for PBXProject "WillIBurn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA29574B1F32437A0086401F;
+			productRefGroup = FA2957551F32437A0086401F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA29579C1F3288AB0086401F /* Products */;
+					ProjectRef = FA29579B1F3288AB0086401F /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FA2957531F32437A0086401F /* WillIBurn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA2957A71F3288AC0086401F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FA2957A61F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957A91F3288AC0086401F /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = FA2957A81F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957AB1F3288AC0086401F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FA2957AA1F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957AD1F3288AC0086401F /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = FA2957AC1F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957AF1F3288AC0086401F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FA2957AE1F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957B11F3288AC0086401F /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = FA2957B01F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA2957B31F3288AC0086401F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FA2957B21F3288AC0086401F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2957521F32437A0086401F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2957651F32437B0086401F /* LaunchScreen.storyboard in Resources */,
+				FA29578B1F324D2D0086401F /* CooperHewitt-Book.otf in Resources */,
+				FA2957621F32437B0086401F /* Assets.xcassets in Resources */,
+				FA29578E1F324D2D0086401F /* CooperHewitt-HeavyItalic.otf in Resources */,
+				FA2957901F324D2D0086401F /* CooperHewitt-LightItalic.otf in Resources */,
+				FA2957911F324D2D0086401F /* CooperHewitt-Medium.otf in Resources */,
+				FA29578A1F324D2D0086401F /* CooperHewitt-BoldItalic.otf in Resources */,
+				FA29578D1F324D2D0086401F /* CooperHewitt-Heavy.otf in Resources */,
+				FA2957941F324D2D0086401F /* CooperHewitt-SemiboldItalic.otf in Resources */,
+				FA2957951F324D2D0086401F /* CooperHewitt-Thin.otf in Resources */,
+				FA29575D1F32437B0086401F /* Main.storyboard in Resources */,
+				FA29578C1F324D2D0086401F /* CooperHewitt-BookItalic.otf in Resources */,
+				FA2957891F324D2D0086401F /* CooperHewitt-Bold.otf in Resources */,
+				FA2957931F324D2D0086401F /* CooperHewitt-Semibold.otf in Resources */,
+				FA2957961F324D2D0086401F /* CooperHewitt-ThinItalic.otf in Resources */,
+				FA2957921F324D2D0086401F /* CooperHewitt-MediumItalic.otf in Resources */,
+				FA29578F1F324D2D0086401F /* CooperHewitt-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2957501F32437A0086401F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2957BA1F328E510086401F /* Constants.swift in Sources */,
+				FA29575A1F32437A0086401F /* ViewController.swift in Sources */,
+				FA2957601F32437B0086401F /* WillIBurn.xcdatamodeld in Sources */,
+				FA2957981F326CB90086401F /* Utilities.swift in Sources */,
+				FA2957581F32437A0086401F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA2957B71F3289EC0086401F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = FA2957B61F3289EC0086401F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA29575B1F32437A0086401F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA29575C1F32437A0086401F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2957631F32437B0086401F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2957641F32437B0086401F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA2957671F32437B0086401F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA2957681F32437B0086401F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA29576A1F32437B0086401F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH272BU5WF;
+				INFOPLIST_FILE = WillIBurn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.WillIBurn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA29576B1F32437B0086401F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH272BU5WF;
+				INFOPLIST_FILE = WillIBurn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.WillIBurn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA29574F1F32437A0086401F /* Build configuration list for PBXProject "WillIBurn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2957671F32437B0086401F /* Debug */,
+				FA2957681F32437B0086401F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2957691F32437B0086401F /* Build configuration list for PBXNativeTarget "WillIBurn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA29576A1F32437B0086401F /* Debug */,
+				FA29576B1F32437B0086401F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA29575E1F32437B0086401F /* WillIBurn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA29575F1F32437B0086401F /* WillIBurn.xcdatamodel */,
+			);
+			currentVersion = FA29575F1F32437B0086401F /* WillIBurn.xcdatamodel */;
+			path = WillIBurn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA29574C1F32437A0086401F /* Project object */;
+}

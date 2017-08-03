@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CooperHewitt-Light.otf">
+            <string>CooperHewitt-Light</string>
+        </array>
+        <array key="CooperHewitt-Thin.otf">
+            <string>CooperHewitt-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WillIBurn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAy-BQ-2J1">
+                                <rect key="frame" x="76" y="30" width="283" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vdo-6m-1gx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Light" family="Cooper Hewitt" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ii-uh-grW">
+                                <rect key="frame" x="19" y="248.5" width="337.5" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="v23-Xw-pAy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Thin" family="Cooper Hewitt" pointSize="150"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-pD-fQd">
+                                <rect key="frame" x="16" y="30" width="50" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MFm-a7-oF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Thin" family="Cooper Hewitt" pointSize="16"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeSkinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tr6-0k-XGP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting data..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-RL-UE5">
+                                <rect key="frame" x="16" y="627" width="140" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Xau-r7-kki"/>
+                                    <constraint firstAttribute="height" constant="20" id="mfP-b9-EVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Thin" family="Cooper Hewitt" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-2d-dq9">
+                                <rect key="frame" x="131" y="627" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes until you burn:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdf-x4-zAs">
+                                <rect key="frame" x="107" y="198.5" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="luX-rl-1EY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Thin" family="Cooper Hewitt" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcE-9n-nZD">
+                                <rect key="frame" x="87" y="498.5" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Le5-al-Rnn"/>
+                                    <constraint firstAttribute="height" constant="40" id="MW3-HA-cOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CooperHewitt-Light" family="Cooper Hewitt" pointSize="28"/>
+                                <state key="normal" title="Set Reminder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remindButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZJ-fr-yZy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mAy-BQ-2J1" firstAttribute="top" secondItem="uJ6-pD-fQd" secondAttribute="top" id="3Fr-QL-e2c"/>
+                            <constraint firstItem="5Ii-uh-grW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="7Kv-jp-C8a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAy-BQ-2J1" secondAttribute="trailing" id="Sjo-62-tji"/>
+                            <constraint firstItem="uJ6-pD-fQd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="TQ0-Uu-UkY"/>
+                            <constraint firstItem="kZn-2d-dq9" firstAttribute="bottom" secondItem="0QS-RL-UE5" secondAttribute="bottom" id="TxQ-M8-7eR"/>
+                            <constraint firstItem="5Ii-uh-grW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoE-wt-Dmf"/>
+                            <constraint firstItem="uJ6-pD-fQd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gdy-bH-FXk"/>
+                            <constraint firstItem="fcE-9n-nZD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h47-Xw-hac"/>
+                            <constraint firstItem="kZn-2d-dq9" firstAttribute="leading" secondItem="0QS-RL-UE5" secondAttribute="trailing" constant="-25" id="iIQ-lz-7NL"/>
+                            <constraint firstItem="Vdf-x4-zAs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQ5-oQ-uIZ"/>
+                            <constraint firstItem="fcE-9n-nZD" firstAttribute="top" secondItem="5Ii-uh-grW" secondAttribute="bottom" id="leg-sd-oAw"/>
+                            <constraint firstItem="5Ii-uh-grW" firstAttribute="top" secondItem="Vdf-x4-zAs" secondAttribute="bottom" constant="20" id="o9l-a5-wDt"/>
+                            <constraint firstItem="mAy-BQ-2J1" firstAttribute="leading" secondItem="uJ6-pD-fQd" secondAttribute="trailing" constant="10" id="pxy-Ga-Gsv"/>
+                            <constraint firstItem="0QS-RL-UE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sq8-Gh-PVO"/>
+                            <constraint firstItem="Vdf-x4-zAs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="wgn-6I-Qi2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0QS-RL-UE5" secondAttribute="bottom" constant="20" id="zU0-sv-ah1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigTimeLabel" destination="5Ii-uh-grW" id="8dr-Xz-M89"/>
+                        <outlet property="searchingActivity" destination="kZn-2d-dq9" id="zmZ-2i-e99"/>
+                        <outlet property="searchingLabel" destination="0QS-RL-UE5" id="9sx-UZ-Qiv"/>
+                        <outlet property="skinTypeLabel" destination="mAy-BQ-2J1" id="4lQ-Uc-Qlg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
