@@ -2,6 +2,14 @@
 Practice Swift Projects
 New skills from projects:
 
+WillIBurn
+-Getting remote data
+-JSON and parsing JSON
+-RESTful services
+-Weather API
+-AlamoFire
+-Local notifications
+
 Transcriber
 -Tabbed apps
 -Permissions
