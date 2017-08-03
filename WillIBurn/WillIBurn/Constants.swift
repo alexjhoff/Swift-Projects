@@ -9,6 +9,8 @@
 import Foundation
 
 struct WeatherUrl {
+    //60 day trial api -> https://developer.worldweatheronline.com/
+    //Free api only gives uvIndex at noon -> https://openweathermap.org/api/uvi
     private let baseUrl = "https://api.worldweatheronline.com/premium/v1/weather.ashx"
     private let key = "&key=06b747f77f6a4796934230945170208"
     private let numDaysForecast = "&num_of_days=1"
