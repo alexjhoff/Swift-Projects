@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA9E54C62061A077002A9E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54C52061A077002A9E23 /* AppDelegate.swift */; };
+		FA9E54CB2061A078002A9E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9E54C92061A078002A9E23 /* Main.storyboard */; };
+		FA9E54CD2061A078002A9E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9E54CC2061A078002A9E23 /* Assets.xcassets */; };
+		FA9E54D02061A078002A9E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9E54CE2061A078002A9E23 /* LaunchScreen.storyboard */; };
+		FA9E54DB2061A078002A9E23 /* DoloExcerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54DA2061A078002A9E23 /* DoloExcerciseTests.swift */; };
+		FA9E54EA2061A6E4002A9E23 /* LocationSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54E92061A6E4002A9E23 /* LocationSelectorViewModel.swift */; };
+		FA9E54EC2061A8C3002A9E23 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54EB2061A8C3002A9E23 /* APIRequest.swift */; };
+		FA9E54EE2061B093002A9E23 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54ED2061B093002A9E23 /* Helpers.swift */; };
+		FA9E54F02061B483002A9E23 /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E54EF2061B483002A9E23 /* APIResponseModel.swift */; };
+		FACB95502061DAAE0077DD76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB954E2061DAAE0077DD76 /* HomeViewController.swift */; };
+		FACB95512061DAAE0077DD76 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB954F2061DAAE0077DD76 /* HomeViewController.xib */; };
+		FACB95542061DAC00077DD76 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB95522061DAC00077DD76 /* NewPostViewController.swift */; };
+		FACB95552061DAC00077DD76 /* NewPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB95532061DAC00077DD76 /* NewPostViewController.xib */; };
+		FACB95582061DAD50077DD76 /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB95562061DAD50077DD76 /* ChooseLocationViewController.swift */; };
+		FACB95592061DAD50077DD76 /* ChooseLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB95572061DAD50077DD76 /* ChooseLocationViewController.xib */; };
+		FACB955F2062E1E30077DD76 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB955E2062E1E30077DD76 /* LocationsModel.swift */; };
+		FACB95622062E5860077DD76 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB95602062E5860077DD76 /* LocationTableViewCell.swift */; };
+		FACB95632062E5860077DD76 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB95612062E5860077DD76 /* LocationTableViewCell.xib */; };
+		FACB9567206418FF0077DD76 /* NewPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB9566206418FF0077DD76 /* NewPostViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA9E54D72061A078002A9E23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9E54BA2061A077002A9E23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9E54C12061A077002A9E23;
+			remoteInfo = DoloExcercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA9E54C22061A077002A9E23 /* DoloExcercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoloExcercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9E54C52061A077002A9E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA9E54CA2061A078002A9E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA9E54CC2061A078002A9E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA9E54CF2061A078002A9E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9E54D12061A078002A9E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9E54D62061A078002A9E23 /* DoloExcerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoloExcerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9E54DA2061A078002A9E23 /* DoloExcerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoloExcerciseTests.swift; sourceTree = "<group>"; };
+		FA9E54DC2061A078002A9E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9E54E92061A6E4002A9E23 /* LocationSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewModel.swift; sourceTree = "<group>"; };
+		FA9E54EB2061A8C3002A9E23 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		FA9E54ED2061B093002A9E23 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		FA9E54EF2061B483002A9E23 /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		FACB954E2061DAAE0077DD76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FACB954F2061DAAE0077DD76 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FACB95522061DAC00077DD76 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		FACB95532061DAC00077DD76 /* NewPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPostViewController.xib; sourceTree = "<group>"; };
+		FACB95562061DAD50077DD76 /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
+		FACB95572061DAD50077DD76 /* ChooseLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLocationViewController.xib; sourceTree = "<group>"; };
+		FACB955E2062E1E30077DD76 /* LocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		FACB95602062E5860077DD76 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		FACB95612062E5860077DD76 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		FACB9566206418FF0077DD76 /* NewPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9E54BF2061A077002A9E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9E54D32061A078002A9E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9E54B92061A077002A9E23 = {
+			isa = PBXGroup;
+			children = (
+				FA9E54C42061A077002A9E23 /* DoloExcercise */,
+				FA9E54D92061A078002A9E23 /* DoloExcerciseTests */,
+				FA9E54C32061A077002A9E23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9E54C32061A077002A9E23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54C22061A077002A9E23 /* DoloExcercise.app */,
+				FA9E54D62061A078002A9E23 /* DoloExcerciseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9E54C42061A077002A9E23 /* DoloExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54E72061A153002A9E23 /* ViewModel */,
+				FA9E54E62061A14D002A9E23 /* View */,
+				FA9E54E52061A146002A9E23 /* Model */,
+				FA9E54E82061A158002A9E23 /* Utilities */,
+			);
+			path = DoloExcercise;
+			sourceTree = "<group>";
+		};
+		FA9E54D92061A078002A9E23 /* DoloExcerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54DA2061A078002A9E23 /* DoloExcerciseTests.swift */,
+				FA9E54DC2061A078002A9E23 /* Info.plist */,
+			);
+			path = DoloExcerciseTests;
+			sourceTree = "<group>";
+		};
+		FA9E54E52061A146002A9E23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54EF2061B483002A9E23 /* APIResponseModel.swift */,
+				FACB955E2062E1E30077DD76 /* LocationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA9E54E62061A14D002A9E23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FACB954E2061DAAE0077DD76 /* HomeViewController.swift */,
+				FACB954F2061DAAE0077DD76 /* HomeViewController.xib */,
+				FACB95522061DAC00077DD76 /* NewPostViewController.swift */,
+				FACB95532061DAC00077DD76 /* NewPostViewController.xib */,
+				FACB95562061DAD50077DD76 /* ChooseLocationViewController.swift */,
+				FACB95572061DAD50077DD76 /* ChooseLocationViewController.xib */,
+				FACB95602062E5860077DD76 /* LocationTableViewCell.swift */,
+				FACB95612062E5860077DD76 /* LocationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA9E54E72061A153002A9E23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54E92061A6E4002A9E23 /* LocationSelectorViewModel.swift */,
+				FACB9566206418FF0077DD76 /* NewPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA9E54E82061A158002A9E23 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E54EB2061A8C3002A9E23 /* APIRequest.swift */,
+				FA9E54ED2061B093002A9E23 /* Helpers.swift */,
+				FA9E54C52061A077002A9E23 /* AppDelegate.swift */,
+				FA9E54C92061A078002A9E23 /* Main.storyboard */,
+				FA9E54CC2061A078002A9E23 /* Assets.xcassets */,
+				FA9E54CE2061A078002A9E23 /* LaunchScreen.storyboard */,
+				FA9E54D12061A078002A9E23 /* Info.plist */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9E54C12061A077002A9E23 /* DoloExcercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9E54DF2061A078002A9E23 /* Build configuration list for PBXNativeTarget "DoloExcercise" */;
+			buildPhases = (
+				FA9E54BE2061A077002A9E23 /* Sources */,
+				FA9E54BF2061A077002A9E23 /* Frameworks */,
+				FA9E54C02061A077002A9E23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoloExcercise;
+			productName = DoloExcercise;
+			productReference = FA9E54C22061A077002A9E23 /* DoloExcercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA9E54D52061A078002A9E23 /* DoloExcerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9E54E22061A078002A9E23 /* Build configuration list for PBXNativeTarget "DoloExcerciseTests" */;
+			buildPhases = (
+				FA9E54D22061A078002A9E23 /* Sources */,
+				FA9E54D32061A078002A9E23 /* Frameworks */,
+				FA9E54D42061A078002A9E23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9E54D82061A078002A9E23 /* PBXTargetDependency */,
+			);
+			name = DoloExcerciseTests;
+			productName = DoloExcerciseTests;
+			productReference = FA9E54D62061A078002A9E23 /* DoloExcerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9E54BA2061A077002A9E23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alex Hoff";
+				TargetAttributes = {
+					FA9E54C12061A077002A9E23 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FA9E54D52061A078002A9E23 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA9E54C12061A077002A9E23;
+					};
+				};
+			};
+			buildConfigurationList = FA9E54BD2061A077002A9E23 /* Build configuration list for PBXProject "DoloExcercise" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA9E54B92061A077002A9E23;
+			productRefGroup = FA9E54C32061A077002A9E23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9E54C12061A077002A9E23 /* DoloExcercise */,
+				FA9E54D52061A078002A9E23 /* DoloExcerciseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9E54C02061A077002A9E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACB95592061DAD50077DD76 /* ChooseLocationViewController.xib in Resources */,
+				FA9E54D02061A078002A9E23 /* LaunchScreen.storyboard in Resources */,
+				FACB95632062E5860077DD76 /* LocationTableViewCell.xib in Resources */,
+				FA9E54CD2061A078002A9E23 /* Assets.xcassets in Resources */,
+				FA9E54CB2061A078002A9E23 /* Main.storyboard in Resources */,
+				FACB95512061DAAE0077DD76 /* HomeViewController.xib in Resources */,
+				FACB95552061DAC00077DD76 /* NewPostViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9E54D42061A078002A9E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9E54BE2061A077002A9E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9E54F02061B483002A9E23 /* APIResponseModel.swift in Sources */,
+				FA9E54C62061A077002A9E23 /* AppDelegate.swift in Sources */,
+				FA9E54EC2061A8C3002A9E23 /* APIRequest.swift in Sources */,
+				FA9E54EE2061B093002A9E23 /* Helpers.swift in Sources */,
+				FACB9567206418FF0077DD76 /* NewPostViewModel.swift in Sources */,
+				FACB95582061DAD50077DD76 /* ChooseLocationViewController.swift in Sources */,
+				FACB95542061DAC00077DD76 /* NewPostViewController.swift in Sources */,
+				FACB95502061DAAE0077DD76 /* HomeViewController.swift in Sources */,
+				FACB95622062E5860077DD76 /* LocationTableViewCell.swift in Sources */,
+				FACB955F2062E1E30077DD76 /* LocationsModel.swift in Sources */,
+				FA9E54EA2061A6E4002A9E23 /* LocationSelectorViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9E54D22061A078002A9E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9E54DB2061A078002A9E23 /* DoloExcerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA9E54D82061A078002A9E23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9E54C12061A077002A9E23 /* DoloExcercise */;
+			targetProxy = FA9E54D72061A078002A9E23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA9E54C92061A078002A9E23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9E54CA2061A078002A9E23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA9E54CE2061A078002A9E23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9E54CF2061A078002A9E23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9E54DD2061A078002A9E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9E54DE2061A078002A9E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9E54E02061A078002A9E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MH272BU5WF;
+				INFOPLIST_FILE = "$(SRCROOT)/DoloExcercise/Utilities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.DoloExcercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA9E54E12061A078002A9E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MH272BU5WF;
+				INFOPLIST_FILE = "$(SRCROOT)/DoloExcercise/Utilities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.DoloExcercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA9E54E32061A078002A9E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoloExcerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.DoloExcerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoloExcercise.app/DoloExcercise";
+			};
+			name = Debug;
+		};
+		FA9E54E42061A078002A9E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DoloExcerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alex.DoloExcerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoloExcercise.app/DoloExcercise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9E54BD2061A077002A9E23 /* Build configuration list for PBXProject "DoloExcercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9E54DD2061A078002A9E23 /* Debug */,
+				FA9E54DE2061A078002A9E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9E54DF2061A078002A9E23 /* Build configuration list for PBXNativeTarget "DoloExcercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9E54E02061A078002A9E23 /* Debug */,
+				FA9E54E12061A078002A9E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9E54E22061A078002A9E23 /* Build configuration list for PBXNativeTarget "DoloExcerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9E54E32061A078002A9E23 /* Debug */,
+				FA9E54E42061A078002A9E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9E54BA2061A077002A9E23 /* Project object */;
+}
